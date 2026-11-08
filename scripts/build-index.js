@@ -120,8 +120,36 @@ function main() {
   }
 
   fs.writeFileSync(README_PATH, readme, 'utf8');
+
+  // 同步输出 index.json，供个人主页等外部站点消费
+  const stats = { easy: 0, medium: 0, hard: 0 };
+  for (const { problems } of categories) {
+    for (const p of problems) {
+      const d = (p.meta.difficulty || '').toLowerCase();
+      if (d in stats) stats[d]++;
+    }
+  }
+  const manifest = {
+    generatedAt: new Date().toISOString(),
+    total: stats.easy + stats.medium + stats.hard,
+    stats,
+    categories: categories.map(({ name, problems }) => ({
+      name,
+      problems: problems.map(({ rel, meta }) => ({
+        id: meta.id,
+        title: meta.title,
+        difficulty: meta.difficulty || '',
+        tags: meta.tags || [],
+        date: meta.date || '',
+        juejin: meta.juejin || '',
+        file: rel
+      }))
+    }))
+  };
+  fs.writeFileSync(path.join(ROOT, 'index.json'), JSON.stringify(manifest, null, 2), 'utf8');
+
   const count = categories.reduce((n, c) => n + c.problems.length, 0);
-  console.log(`✓ 目录索引已更新：${categories.length} 个类目，共 ${count} 题`);
+  console.log(`✓ 目录索引已更新：${categories.length} 个类目，共 ${count} 题（README.md + index.json）`);
 }
 
 main();

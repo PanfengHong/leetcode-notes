@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-11-08T08:37:47.741Z",
+  "total": 1,
+  "stats": {
+    "easy": 1,
+    "medium": 0,
+    "hard": 0
+  },
+  "categories": [
+    {
+      "name": "top-100",
+      "problems": [
+        {
+          "id": "1",
+          "title": "两数之和",
+          "difficulty": "easy",
+          "tags": [
+            "数组",
+            "哈希表"
+          ],
+          "date": "2026-11-08",
+          "juejin": "",
+          "file": "top-100/001-two-sum.md"
+        }
+      ]
+    }
+  ]
+}
