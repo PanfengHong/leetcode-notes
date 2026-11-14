@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-08T08:37:47.741Z",
-  "total": 1,
+  "generatedAt": "2026-11-14T05:06:59.846Z",
+  "total": 2,
   "stats": {
     "easy": 1,
-    "medium": 0,
+    "medium": 1,
     "hard": 0
   },
   "categories": [
@@ -21,6 +21,17 @@
           "date": "2026-11-08",
           "juejin": "",
           "file": "top-100/001-two-sum.md"
+        },
+        {
+          "id": "2",
+          "title": "两数相加",
+          "difficulty": "medium",
+          "tags": [
+            "链表"
+          ],
+          "date": "2026-11-14",
+          "juejin": "",
+          "file": "top-100/002-add-two-numbers.md"
         }
       ]
     }
