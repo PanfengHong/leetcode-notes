@@ -24,7 +24,7 @@ node scripts/build-index.js
 ```
 
 <!-- INDEX:START -->
-> 已完成 **4** 题：🟢 简单 2 · 🟡 中等 1 · 🔴 困难 1
+> 已完成 **5** 题：🟢 简单 2 · 🟡 中等 2 · 🔴 困难 1
 
 ## top-100
 
@@ -32,6 +32,7 @@ node scripts/build-index.js
 | - | --- | ---- | ---- | ---- | ---- |
 | 1 | [两数之和](top-100/001-two-sum.md) | 🟢 简单 | 数组 / 哈希表 | 2026-11-08 | - |
 | 2 | [两数相加](top-100/002-add-two-numbers.md) | 🟡 中等 | 链表 | 2026-11-14 | - |
+| 3 | [无重复字符的最长子串](top-100/003-longest-substring-without-repeating-characters.md) | 🟡 中等 | 双指针 / 哈希表 / 滑动窗口 | 2026-11-14 | - |
 | 20 | [有效的括号](top-100/020-valid-parentheses.md) | 🟢 简单 | 栈 | 2026-11-14 | - |
 | 42 | [接雨水](top-100/042-trapping-rain-water.md) | 🔴 困难 | 双指针 | 2026-11-14 | - |
 <!-- INDEX:END -->
