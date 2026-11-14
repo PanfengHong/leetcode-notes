@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-14T05:36:08.443Z",
-  "total": 3,
+  "generatedAt": "2026-11-14T09:45:31.976Z",
+  "total": 4,
   "stats": {
-    "easy": 1,
+    "easy": 2,
     "medium": 1,
     "hard": 1
   },
@@ -32,6 +32,17 @@
           "date": "2026-11-14",
           "juejin": "",
           "file": "top-100/002-add-two-numbers.md"
+        },
+        {
+          "id": "20",
+          "title": "有效的括号",
+          "difficulty": "easy",
+          "tags": [
+            "栈"
+          ],
+          "date": "2026-11-14",
+          "juejin": "",
+          "file": "top-100/020-valid-parentheses.md"
         },
         {
           "id": "42",
