@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-15T03:57:28.267Z",
-  "total": 6,
+  "generatedAt": "2026-11-15T05:48:53.094Z",
+  "total": 7,
   "stats": {
     "easy": 3,
-    "medium": 2,
+    "medium": 3,
     "hard": 1
   },
   "categories": [
@@ -45,6 +45,18 @@
           "date": "2026-11-14",
           "juejin": "",
           "file": "top-100/003-longest-substring-without-repeating-characters.md"
+        },
+        {
+          "id": "15",
+          "title": "三数之和",
+          "difficulty": "medium",
+          "tags": [
+            "双指针",
+            "数组"
+          ],
+          "date": "2026-11-15",
+          "juejin": "",
+          "file": "top-100/015-3sum.md"
         },
         {
           "id": "20",
