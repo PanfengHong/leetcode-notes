@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-14T10:01:51.764Z",
-  "total": 5,
+  "generatedAt": "2026-11-15T03:57:28.267Z",
+  "total": 6,
   "stats": {
-    "easy": 2,
+    "easy": 3,
     "medium": 2,
     "hard": 1
   },
@@ -67,6 +67,18 @@
           "date": "2026-11-14",
           "juejin": "",
           "file": "top-100/042-trapping-rain-water.md"
+        },
+        {
+          "id": "206",
+          "title": "反转链表",
+          "difficulty": "easy",
+          "tags": [
+            "链表",
+            "双指针"
+          ],
+          "date": "2026-11-15",
+          "juejin": "",
+          "file": "top-100/206-reverse-linked-list.md"
         }
       ]
     }
