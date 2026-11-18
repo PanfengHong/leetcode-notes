@@ -87,14 +87,15 @@ function buildIndex(categories) {
   for (const { name, problems } of categories) {
     lines.push(`## ${name}`);
     lines.push('');
-    lines.push('| # | 题目 | 难度 | 标签 | 日期 | 掘金 |');
-    lines.push('| - | --- | ---- | ---- | ---- | ---- |');
+    lines.push('| # | 题目 | 难度 | 分类 | 标签 | 日期 | 掘金 |');
+    lines.push('| - | --- | ---- | ---- | ---- | ---- | ---- |');
     for (const { rel, meta } of problems) {
       const d = (meta.difficulty || '').toLowerCase();
       const difficulty = DIFF_BADGE[d] || meta.difficulty || '-';
+      const category = meta.category || '-';
       const tags = Array.isArray(meta.tags) ? meta.tags.join(' / ') : meta.tags || '-';
       const juejin = meta.juejin ? `[文章](${meta.juejin})` : '-';
-      lines.push(`| ${meta.id} | [${meta.title}](${rel}) | ${difficulty} | ${tags} | ${meta.date || '-'} | ${juejin} |`);
+      lines.push(`| ${meta.id} | [${meta.title}](${rel}) | ${difficulty} | ${category} | ${tags} | ${meta.date || '-'} | ${juejin} |`);
     }
     lines.push('');
   }
@@ -122,23 +123,39 @@ function main() {
   fs.writeFileSync(README_PATH, readme, 'utf8');
 
   // 同步输出 index.json，供个人主页等外部站点消费
+  const allProblems = categories.flatMap(({ name, problems }) =>
+    problems.map(({ rel, meta }) => ({ dir: name, rel, meta }))
+  );
+
   const stats = { easy: 0, medium: 0, hard: 0 };
-  for (const { problems } of categories) {
-    for (const p of problems) {
-      const d = (p.meta.difficulty || '').toLowerCase();
-      if (d in stats) stats[d]++;
-    }
+  for (const { meta } of allProblems) {
+    const d = (meta.difficulty || '').toLowerCase();
+    if (d in stats) stats[d]++;
   }
+
+  // 按题型（category）分组，供外部按 LeetCode 题型分区展示
+  const topicMap = new Map();
+  for (const { meta } of allProblems) {
+    const topic = meta.category || '未分类';
+    if (!topicMap.has(topic)) topicMap.set(topic, []);
+    topicMap.get(topic).push(Number(meta.id));
+  }
+  const topics = [...topicMap.entries()]
+    .map(([name, ids]) => ({ name, count: ids.length, problems: ids.sort((a, b) => a - b) }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh'));
+
   const manifest = {
     generatedAt: new Date().toISOString(),
     total: stats.easy + stats.medium + stats.hard,
     stats,
+    topics,
     categories: categories.map(({ name, problems }) => ({
       name,
       problems: problems.map(({ rel, meta }) => ({
-        id: meta.id,
+        id: Number(meta.id),
         title: meta.title,
         difficulty: meta.difficulty || '',
+        category: meta.category || '',
         tags: meta.tags || [],
         date: meta.date || '',
         juejin: meta.juejin || '',
@@ -148,8 +165,8 @@ function main() {
   };
   fs.writeFileSync(path.join(ROOT, 'index.json'), JSON.stringify(manifest, null, 2), 'utf8');
 
-  const count = categories.reduce((n, c) => n + c.problems.length, 0);
-  console.log(`✓ 目录索引已更新：${categories.length} 个类目，共 ${count} 题（README.md + index.json）`);
+  const count = allProblems.length;
+  console.log(`✓ 目录索引已更新：${categories.length} 个类目，${topics.length} 个题型，共 ${count} 题（README.md + index.json）`);
 }
 
 main();

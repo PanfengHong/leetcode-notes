@@ -2,6 +2,7 @@
 id: 0
 title: 题目名称
 difficulty: easy          # easy | medium | hard
+category: 数组            # 唯一主分类，用于分组，取值见 README「题型分类取值」
 tags: []                  # 如 [数组, 哈希表]
 date: 2026-11-08
 juejin: ""                # 同步发布到掘金后，回填文章链接

@@ -1,8 +1,9 @@
 ---
 id: 20
 title: 有效的括号
-difficulty: easy          
-tags: [栈]                  
+difficulty: easy
+category: 栈
+tags: [字符串, 栈]
 date: 2026-11-14
 juejin: ""                
 ---

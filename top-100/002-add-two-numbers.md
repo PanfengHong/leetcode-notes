@@ -1,8 +1,9 @@
 ---
 id: 2
 title: 两数相加
-difficulty: medium          
-tags: [链表]                  
+difficulty: medium
+category: 链表
+tags: [链表, 数学]
 date: 2026-11-14
 juejin: ""         
 ---

@@ -2,6 +2,7 @@
 id: 1
 title: 两数之和
 difficulty: easy
+category: 哈希表
 tags: [数组, 哈希表]
 date: 2026-11-08
 juejin: ""

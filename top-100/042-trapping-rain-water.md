@@ -1,8 +1,9 @@
 ---
 id: 42
 title: 接雨水
-difficulty: hard          
-tags: [双指针]                  
+difficulty: hard
+category: 双指针
+tags: [数组, 双指针, 单调栈]
 date: 2026-11-14
 juejin: ""         
 ---

@@ -1,19 +1,66 @@
 {
-  "generatedAt": "2026-11-15T05:48:53.094Z",
-  "total": 7,
+  "generatedAt": "2026-11-18T02:38:38.948Z",
+  "total": 8,
   "stats": {
-    "easy": 3,
+    "easy": 4,
     "medium": 3,
     "hard": 1
   },
+  "topics": [
+    {
+      "name": "链表",
+      "count": 2,
+      "problems": [
+        2,
+        206
+      ]
+    },
+    {
+      "name": "双指针",
+      "count": 2,
+      "problems": [
+        15,
+        42
+      ]
+    },
+    {
+      "name": "动态规划",
+      "count": 1,
+      "problems": [
+        70
+      ]
+    },
+    {
+      "name": "哈希表",
+      "count": 1,
+      "problems": [
+        1
+      ]
+    },
+    {
+      "name": "滑动窗口",
+      "count": 1,
+      "problems": [
+        3
+      ]
+    },
+    {
+      "name": "栈",
+      "count": 1,
+      "problems": [
+        20
+      ]
+    }
+  ],
   "categories": [
     {
       "name": "top-100",
       "problems": [
         {
-          "id": "1",
+          "id": 1,
           "title": "两数之和",
           "difficulty": "easy",
+          "category": "哈希表",
           "tags": [
             "数组",
             "哈希表"
@@ -23,23 +70,26 @@
           "file": "top-100/001-two-sum.md"
         },
         {
-          "id": "2",
+          "id": 2,
           "title": "两数相加",
           "difficulty": "medium",
+          "category": "链表",
           "tags": [
-            "链表"
+            "链表",
+            "数学"
           ],
           "date": "2026-11-14",
           "juejin": "",
           "file": "top-100/002-add-two-numbers.md"
         },
         {
-          "id": "3",
+          "id": 3,
           "title": "无重复字符的最长子串",
           "difficulty": "medium",
+          "category": "滑动窗口",
           "tags": [
-            "双指针",
             "哈希表",
+            "字符串",
             "滑动窗口"
           ],
           "date": "2026-11-14",
@@ -47,22 +97,26 @@
           "file": "top-100/003-longest-substring-without-repeating-characters.md"
         },
         {
-          "id": "15",
+          "id": 15,
           "title": "三数之和",
           "difficulty": "medium",
+          "category": "双指针",
           "tags": [
+            "数组",
             "双指针",
-            "数组"
+            "排序"
           ],
           "date": "2026-11-15",
           "juejin": "",
           "file": "top-100/015-3sum.md"
         },
         {
-          "id": "20",
+          "id": 20,
           "title": "有效的括号",
           "difficulty": "easy",
+          "category": "栈",
           "tags": [
+            "字符串",
             "栈"
           ],
           "date": "2026-11-14",
@@ -70,23 +124,40 @@
           "file": "top-100/020-valid-parentheses.md"
         },
         {
-          "id": "42",
+          "id": 42,
           "title": "接雨水",
           "difficulty": "hard",
+          "category": "双指针",
           "tags": [
-            "双指针"
+            "数组",
+            "双指针",
+            "单调栈"
           ],
           "date": "2026-11-14",
           "juejin": "",
           "file": "top-100/042-trapping-rain-water.md"
         },
         {
-          "id": "206",
+          "id": 70,
+          "title": "爬楼梯",
+          "difficulty": "easy",
+          "category": "动态规划",
+          "tags": [
+            "数学",
+            "动态规划"
+          ],
+          "date": "2026-11-18",
+          "juejin": "",
+          "file": "top-100/070-climbing-stairs.md"
+        },
+        {
+          "id": 206,
           "title": "反转链表",
           "difficulty": "easy",
+          "category": "链表",
           "tags": [
             "链表",
-            "双指针"
+            "递归"
           ],
           "date": "2026-11-15",
           "juejin": "",

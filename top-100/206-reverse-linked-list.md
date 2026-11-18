@@ -1,8 +1,9 @@
 ---
 id: 206
 title: 反转链表
-difficulty: easy         
-tags: [链表, 双指针]                 
+difficulty: easy
+category: 链表
+tags: [链表, 递归]
 date: 2026-11-15
 juejin: ""                
 ---

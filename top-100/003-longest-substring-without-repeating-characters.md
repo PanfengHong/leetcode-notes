@@ -1,8 +1,9 @@
 ---
 id: 3
 title: 无重复字符的最长子串
-difficulty: medium         
-tags: [双指针, 哈希表, 滑动窗口]
+difficulty: medium
+category: 滑动窗口
+tags: [哈希表, 字符串, 滑动窗口]
 date: 2026-11-14
 juejin: ""                
 ---
