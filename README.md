@@ -37,7 +37,7 @@ node scripts/build-index.js
 ```
 
 <!-- INDEX:START -->
-> 已完成 **8** 题：🟢 简单 4 · 🟡 中等 3 · 🔴 困难 1
+> 已完成 **9** 题：🟢 简单 5 · 🟡 中等 3 · 🔴 困难 1
 
 ## top-100
 
@@ -48,6 +48,7 @@ node scripts/build-index.js
 | 3 | [无重复字符的最长子串](top-100/003-longest-substring-without-repeating-characters.md) | 🟡 中等 | 滑动窗口 | 哈希表 / 字符串 / 滑动窗口 | 2026-11-14 | - |
 | 15 | [三数之和](top-100/015-3sum.md) | 🟡 中等 | 双指针 | 数组 / 双指针 / 排序 | 2026-11-15 | - |
 | 20 | [有效的括号](top-100/020-valid-parentheses.md) | 🟢 简单 | 栈 | 字符串 / 栈 | 2026-11-14 | - |
+| 21 | [合并两个有序链表](top-100/021-merge-two-sorted-lists.md) | 🟢 简单 | 链表 | 链表 | 2026-11-18 | - |
 | 42 | [接雨水](top-100/042-trapping-rain-water.md) | 🔴 困难 | 双指针 | 数组 / 双指针 / 单调栈 | 2026-11-14 | - |
 | 70 | [爬楼梯](top-100/070-climbing-stairs.md) | 🟢 简单 | 动态规划 | 数学 / 动态规划 | 2026-11-18 | - |
 | 206 | [反转链表](top-100/206-reverse-linked-list.md) | 🟢 简单 | 链表 | 链表 / 递归 | 2026-11-15 | - |
