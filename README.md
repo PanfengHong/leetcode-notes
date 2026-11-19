@@ -37,7 +37,7 @@ node scripts/build-index.js
 ```
 
 <!-- INDEX:START -->
-> 已完成 **9** 题：🟢 简单 5 · 🟡 中等 3 · 🔴 困难 1
+> 已完成 **10** 题：🟢 简单 6 · 🟡 中等 3 · 🔴 困难 1
 
 ## top-100
 
@@ -51,5 +51,6 @@ node scripts/build-index.js
 | 21 | [合并两个有序链表](top-100/021-merge-two-sorted-lists.md) | 🟢 简单 | 链表 | 链表 | 2026-11-18 | - |
 | 42 | [接雨水](top-100/042-trapping-rain-water.md) | 🔴 困难 | 双指针 | 数组 / 双指针 / 单调栈 | 2026-11-14 | - |
 | 70 | [爬楼梯](top-100/070-climbing-stairs.md) | 🟢 简单 | 动态规划 | 数学 / 动态规划 | 2026-11-18 | - |
+| 121 | [买卖股票的最佳时机](top-100/121-best-time-to-buy-and-sell-stock.md) | 🟢 简单 | 贪心 | 贪心 | 2026-11-19 | - |
 | 206 | [反转链表](top-100/206-reverse-linked-list.md) | 🟢 简单 | 链表 | 链表 / 递归 | 2026-11-15 | - |
 <!-- INDEX:END -->
